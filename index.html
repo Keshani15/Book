@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cabin+Sketch&family=Gabriela&family=Indie+Flower&family=Libre+Franklin:wght@200&family=Open+Sans&family=Smooch&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4080b330aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        --branding-color: #2a3e48;
+        --heading-font-family: "Sedgwick Ave", cursive;
+        --default-font-family: "Gabriela", serif;
+      }
+
+      body {
+        background: radial-gradient(circle, #d9aa6c 0%, #322a1e 100%);
+      }
+
+      h1,
+      h3 {
+        font-family: var(--heading-font-family);
+        color: var(--branding-color);
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      p {
+        font-family: var(--default-font-family);
+        font-size: 20px;
+      }
+
+      p strong {
+        font-family: var(--heading-font-family);
+        color: var(--branding-color);
+      }
+
+      footer {
+        color: rgb(0, 0, 0);
+        font-family: var(--heading-font-family);
+      }
+
+      footer a {
+        color: rgb(0, 0, 0);
+        font-family: var(--default-font-family);
+      }
+
+      .links {
+        cursor: pointer;
+        font-family: var(--default-font-family);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 30px;
+      }
+
+      #displayText {
+        display: none;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      #clickableImage {
+        cursor: pointer;
+        padding: 3px 0px;
+        border: 1px solid var(--branding-color);
+        border-radius: 14px;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      #hiHarry {
+        color: #212529;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body container">
+      <h1 class="text-center mt-5">Harry Potter</h1>
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-6">
+            <p>
+              Hop on board the hogwarts express and come take a ride with me
+              into the wonderful, magical, mystical land of
+              <strong>Harry Potter!</strong>
+            </p>
+          </div>
+          <div class="col-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/863/original/91742c777935a7eac54bb7a24e18a3cb469c8ee8_hq.jpg?1701689111"
+              alt="hogwarts train-come ride with me"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center mt-4">Choose your favourite Book!</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-4 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/877/original/images_%281%29.jfif?1701697450"
+                alt=""
+                class="img-fluid rounded mt-2"
+                width="80%"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the first book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+          <div class="col-4 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/927/original/thumbnail.jfif?1701716451"
+                alt=""
+                class="img-fluid rounded mt-5"
+                width="78%"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the second book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+          <div class="col-4 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/923/original/main-qimg-a72b34874366481d20f647118c619146-lq_3.jfif?1701715953"
+                alt=""
+                class="img-fluid rounded mt-5"
+                width="82%"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the second book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/922/original/download_goblet.jfif?1701715872"
+                alt=""
+                class="img-fluid rounded mt-5"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the first book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/925/original/9781408855690.jpg?1701716148"
+                alt=""
+                class="img-fluid rounded mt-5"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the first book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/862/original/81p24nYtkL._AC_UF8941000_QL80_.jpg?1701689103"
+                alt=""
+                class="img-fluid rounded mt-5"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the second book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/926/original/download.jfif?1701716239"
+                alt=""
+                class="img-fluid rounded mt-5"
+              />
+            </div>
+            <div id="displayText">
+              <p>
+                This is the second book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts exits!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links d-flex justify-content-between">
+        <a href="#" id="hiHarry" class="text-center"
+          >Click to say <br />
+          Hi Harry</a
+        >
+        <div class="clickEmoji text-center" id="mischiefManaged">
+          <p>
+            <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
+            visiting! <i class="fa-solid fa-wand-sparkles"></i>
+          </p>
+        </div>
+        <div
+          id="displayMM"
+          style="
+            display: none;
+            color: #212529;
+            padding: 20px;
+            font-family: var(--default-font-family);
+            text-align: center;
+            font-size: 60px;
+          "
+        >
+          <i class="fa-solid fa-shoe-prints"></i>
+          <h2>Mischief Managed!</h2>
+        </div>
+      </div>
+      <footer class="text-center">
+        <small
+          ><a href="https://github.com/Keshani15">Open source</a>, coded by
+          Keshani Naidoo
+        </small>
+      </footer>
+    </div>
+    <script>
+      var clickableImage = document.getElementById("clickableImage");
+      var displayText = document.getElementById("displayText");
+
+      function displayTextFromImage() {
+        if (clickableImage.style.display === "none") {
+          clickableImage.style.display = "block";
+          displayText.style.display = "none";
+        } else {
+          clickableImage.style.display = "none";
+          displayText.style.display = "block";
+        }
+      }
+
+      function sayHi(event) {
+        event.preventDefault();
+        let h1 = document.querySelector("h1");
+        let name = prompt("What is your name? ");
+        h1.innerHTML = `Hi ${name}, welcome to Hogwarts!`;
+        h1.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+
+      clickableImage.addEventListener("click", displayTextFromImage);
+      displayText.addEventListener("click", displayTextFromImage);
+
+      let h1 = document.querySelector("#hiHarry");
+      h1.addEventListener("click", sayHi);
+
+      function mischiefManaged() {
+        // Hide clickable items
+        document.querySelectorAll(".clickableItem").forEach(function (item) {
+          item.style.display = "none";
+        });
+
+        // Display the "Mischief Managed!" message
+        document.getElementById("displayMM").style.display = "block";
+
+        // Clear the body content
+        document.body.innerHTML =
+          "<h2 style='color: black; padding: 500px; text-align: center; font-size: 60px; font-family: var(--default-font-family);'><i class='fa-solid fa-shoe-prints'></i>Mischief Managed!</h2>";
+      }
+
+      document
+        .getElementById("mischiefManaged")
+        .addEventListener("click", function () {
+          mischiefManaged();
+        });
+    </script>
+  </body>
+</html>
