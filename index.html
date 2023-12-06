@@ -55,10 +55,10 @@
       p {
         font-family: var(--default-font-family);
         font-size: 20px;
+        line-height: 1.8;
       }
 
       p strong {
-        font-family: var(--heading-font-family);
         color: var(--branding-color);
       }
 
@@ -72,12 +72,15 @@
         font-family: var(--default-font-family);
       }
 
-      .links {
-        cursor: pointer;
-        font-family: var(--default-font-family);
-        font-weight: bold;
-        font-size: 20px;
-        padding: 30px;
+      .col-6 img {
+        box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.6);
+      }
+
+      .H {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
       }
 
       #displayText {
@@ -87,211 +90,226 @@
         padding: 10px;
       }
 
-      #clickableImage {
+      .clickableImage {
         cursor: pointer;
-        padding: 3px 0px;
-        border: 1px solid var(--branding-color);
+        text-align: center;
         border-radius: 14px;
-        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
       }
 
-      #hiHarry {
+      #hiHarry,
+      #mischiefManaged {
         color: #212529;
         text-decoration: none;
+        cursor: pointer;
+        font-family: var(--default-font-family);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 30px;
       }
 
       @media (max-width: 980px) {
-        p {
+        .col-6 p,
+        .col-3 p,
+        .col-4 p {
           font-size: 8px;
+        }
+
+        #displayMM {
+          display: none;
+          color: #212529;
+          font-family: var(--default-font-family);
+          text-align: center;
+          font-size: 60px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="body container">
-      <h1 class="text-center mt-5">Harry Potter</h1>
-
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-6">
-            <p>
-              Hop on board the hogwarts express and come take a ride with me
-              into the wonderful, magical, mystical land of
-              <strong>Harry Potter!</strong>
-              As you flip open the pages of J.K. Rowling's masterpieces, you'll
-              find yourself transported to a realm where words have the power to
-              cast spells and every sentence holds the enchantment of discovery.
-              Join Harry, Hermione, and Ron on a literary journey that
-              transcends the boundaries of reality. The pages come alive with
-              the vibrant hues of a magical world, where the aroma of pumpkin
-              pasties wafts through the air, and the ink on parchment seems to
-              ripple with the energy of an ever-beating wizarding heart. Reading
-              the Harry Potter books is not merely an act of turning pages; it's
-              an immersive experience, a ticket to Hogwarts that allows your
-              imagination to soar alongside broomsticks and explore the hidden
-              corridors of the castle. As you delve deeper into the narrative,
-              you'll find that the magic isn't confined to the story; it's
-              interwoven with the act of reading itself.
+    <div class="container">
+      <div class="body container">
+        <h1 class="text-center mt-5">Harry Potter</h1>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-6">
+              <p>
+                <strong class="H">H</strong>op on board the hogwarts express and
+                come take a ride with me into the wonderful, magical, mystical
+                land of Harry Potter! As you flip open the pages of J.K.
+                Rowling's masterpieces, you'll find yourself transported to a
+                realm where words have the power to cast spells and every
+                sentence holds the enchantment of discovery. The pages come
+                alive with the vibrant hues of a magical world, where the aroma
+                of pumpkin pasties wafts through the air, and the ink on
+                parchment seems to ripple with the energy of an ever-beating
+                wizarding heart. As you delve deeper into the narrative, you'll
+                find that the magic isn't confined to the story; it's interwoven
+                with the act of reading itself.
+              </p>
+            </div>
+            <div class="col-6">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/863/original/91742c777935a7eac54bb7a24e18a3cb469c8ee8_hq.jpg?1701689111"
+                alt="hogwarts train-come ride with me"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center mt-4">Choose your favourite Book!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/193/original/HP_phil.PNG?1701892446"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the first book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+            <div class="col-4 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/191/original/HP_cham.PNG?1701891971"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the second book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+            <div class="col-4 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/186/original/HP_pris.PNG?1701891678"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the Third book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-3 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/192/original/HP_gob.PNG?17018924302"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the goblet book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+            <div class="col-3 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/187/original/HP_order.PNG?1701891752"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the first book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+            <div class="col-3 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/188/original/HP_half.PNG?1701891760"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the Half blood book in the series, young Harry has no
+                  idea that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+            <div class="col-3 clickableItem">
+              <div id="clickableImage">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/190/original/HP_deathly.PNG?1701891963"
+                  alt=""
+                  class="clickableImage img-fluid rounded"
+                />
+              </div>
+              <div id="displayText">
+                <p>
+                  This is the second book in the series, young Harry has no idea
+                  that he is a wizard or that the magical world of hogwarts
+                  exits!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="links d-flex justify-content-between">
+          <a href="#" id="hiHarry" class="text-center"
+            >Click to say <br />
+            'Hi Harry'</a
+          >
+          <div class="clickEmoji text-center" id="mischiefManaged">
+            <p class="thankYou">
+              <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
+              visiting! <i class="fa-solid fa-wand-sparkles"></i>
             </p>
           </div>
-          <div class="col-6">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/863/original/91742c777935a7eac54bb7a24e18a3cb469c8ee8_hq.jpg?1701689111"
-              alt="hogwarts train-come ride with me"
-              class="img-fluid rounded"
-            />
+          <div
+            id="displayMM"
+            style="
+              display: none;
+              color: #212529;
+              padding: 20px;
+              font-family: var(--default-font-family);
+              text-align: center;
+              font-size: 60px;
+            "
+          >
+            <i class="fa-solid fa-shoe-prints"></i>
+            <h2>Mischief Managed!</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <p class="text-center mt-4">Choose your favourite Book!</p>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-4 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/877/original/images_%281%29.jfif?1701697450"
-                alt=""
-                class="img-fluid rounded mt-2"
-                width="80%"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the first book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-          <div class="col-4 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/927/original/thumbnail.jfif?1701716451"
-                alt=""
-                class="img-fluid rounded mt-5"
-                width="78%"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the second book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-          <div class="col-4 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/923/original/main-qimg-a72b34874366481d20f647118c619146-lq_3.jfif?1701715953"
-                alt=""
-                class="img-fluid rounded mt-5"
-                width="82%"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the second book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/922/original/download_goblet.jfif?1701715872"
-                alt=""
-                class="img-fluid rounded mt-5"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the first book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-          <div class="col-3 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/925/original/9781408855690.jpg?1701716148"
-                alt=""
-                class="img-fluid rounded mt-5"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the first book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-          <div class="col-3 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/862/original/81p24nYtkL._AC_UF8941000_QL80_.jpg?1701689103"
-                alt=""
-                class="img-fluid rounded mt-5"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the second book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-          <div class="col-3 clickableItem">
-            <div id="clickableImage">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/926/original/download.jfif?1701716239"
-                alt=""
-                class="img-fluid rounded mt-5"
-              />
-            </div>
-            <div id="displayText">
-              <p>
-                This is the second book in the series, young Harry has no idea
-                that he is a wizard or that the magical world of hogwarts exits!
-              </p>
-            </div>
-          </div>
-        </div>
+        <footer class="text-center">
+          <small
+            ><a href="https://github.com/Keshani15">Open source</a>, coded by
+            Keshani Naidoo
+          </small>
+        </footer>
       </div>
-      <div class="links d-flex justify-content-between">
-        <a href="#" id="hiHarry" class="text-center"
-          >Click to say <br />
-          Hi to Harry</a
-        >
-        <div class="clickEmoji text-center" id="mischiefManaged">
-          <p>
-            <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
-            visiting! <i class="fa-solid fa-wand-sparkles"></i>
-          </p>
-        </div>
-        <div
-          id="displayMM"
-          style="
-            display: none;
-            color: #212529;
-            padding: 20px;
-            font-family: var(--default-font-family);
-            text-align: center;
-            font-size: 60px;
-          "
-        >
-          <i class="fa-solid fa-shoe-prints"></i>
-          <h2>Mischief Managed!</h2>
-        </div>
-      </div>
-      <footer class="text-center">
-        <small
-          ><a href="https://github.com/Keshani15">Open source</a>, coded by
-          Keshani Naidoo
-        </small>
-      </footer>
     </div>
     <script>
       var clickableImage = document.getElementById("clickableImage");
@@ -336,7 +354,7 @@
 
         // Clear the body content
         document.body.innerHTML =
-          "<h2 style='color: black; padding: 500px; text-align: center; font-size: 60px; font-family: var(--default-font-family);'><i class='fa-solid fa-shoe-prints'></i>Mischief Managed!</h2>";
+          "<h2 style='color: black; padding: 500px 50px; text-align: center; font-size: 60px; font-family: var(--default-font-family);'><i class='fa-solid fa-shoe-prints'></i>Mischief Managed!</h2>";
       }
 
       document
