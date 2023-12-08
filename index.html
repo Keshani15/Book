@@ -76,6 +76,13 @@
         box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.6);
       }
 
+      .col-4 img {
+        max-width: 78%;
+        height: auto;
+        margin-left: 40px;
+        margin-bottom: 15px;
+      }
+
       .H {
         font-size: 30px;
         margin: 0;
@@ -94,7 +101,7 @@
         cursor: pointer;
         text-align: center;
         border-radius: 14px;
-        box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.3);
       }
 
       #hiHarry,
@@ -121,6 +128,13 @@
           font-family: var(--default-font-family);
           text-align: center;
           font-size: 60px;
+        }
+
+        .col-4 img {
+          max-width: 78%;
+          height: auto;
+          margin-left: 20px;
+          margin-bottom: 15px;
         }
       }
     </style>
@@ -160,9 +174,9 @@
               <p class="text-center mt-4">Choose your favourite Book!</p>
             </div>
           </div>
-          <div class="row">
+          <div class="row d-flex justify-content-between">
             <div class="col-4 clickableItem">
-              <div id="clickableImage">
+              <div id="clickableImage" class="img1">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/193/original/HP_phil.PNG?1701892446"
                   alt=""
@@ -178,7 +192,7 @@
               </div>
             </div>
             <div class="col-4 clickableItem">
-              <div id="clickableImage">
+              <div id="clickableImage" class="img2">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/191/original/HP_cham.PNG?1701891971"
                   alt=""
@@ -194,7 +208,7 @@
               </div>
             </div>
             <div class="col-4 clickableItem">
-              <div id="clickableImage">
+              <div id="clickableImage" class="img3">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/186/original/HP_pris.PNG?1701891678"
                   alt=""
@@ -210,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="row pt-3">
+          <div class="row">
             <div class="col-3 clickableItem">
               <div id="clickableImage">
                 <img
@@ -282,6 +296,7 @@
             >Click to say <br />
             'Hi Harry'</a
           >
+
           <div class="clickEmoji text-center" id="mischiefManaged">
             <p class="thankYou">
               <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
