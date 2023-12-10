@@ -33,33 +33,48 @@
     ></script>
     <style>
       :root {
-        --branding-color: #2a3e48;
+        --branding-color: #482a2a;
         --heading-font-family: "Sedgwick Ave", cursive;
         --default-font-family: "Gabriela", serif;
       }
 
       body {
-        background: radial-gradient(circle, #d9aa6c 0%, #322a1e 100%);
+        background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/714/original/27a065b9a7ee9cdf719d6225e5b3e9d0.gif?1702233625");
+        background-size: 100% 100%;
+        padding: 50px 50px;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+
+      .books-content {
+        background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/722/original/old-parchment-paper-texture-7746617.jpg?1702237779");
+        background-size: 100% 100%;
+        padding: 50px 50px;
       }
 
       h1,
       h3 {
         font-family: var(--heading-font-family);
-        color: var(--branding-color);
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 80px;
       }
 
       p {
         font-family: var(--default-font-family);
         font-size: 20px;
         line-height: 1.8;
+        color: #212529;
+        font-weight: bold;
+      }
+
+      .mid {
+        font-size: 35px;
       }
 
       p strong {
-        color: var(--branding-color);
+        color: #212529;
       }
 
       footer {
@@ -72,6 +87,14 @@
         font-family: var(--default-font-family);
       }
 
+      .heading {
+        background: black;
+        color: white;
+        padding: 25px;
+        margin-top: 15px;
+        border: 1px solid transparent;
+        border-radius: 14px;
+      }
       .col-6 img {
         box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.6);
       }
@@ -126,21 +149,23 @@
       }
 
       #hiHarry,
-      #mischiefManaged {
-        color: #212529;
+      #mischiefManaged,
+      #thankYou {
         text-decoration: none;
         cursor: pointer;
         font-family: var(--default-font-family);
         font-weight: bold;
         font-size: 20px;
-        padding: 30px;
+        margin: 15px;
+        color: white;
       }
 
       @media (max-width: 980px) {
         .col-6 p,
         .col-3 p,
         .col-4 p {
-          font-size: 8px;
+          font-size: 10px;
+          margin-top: 15px;
         }
 
         #displayMM {
@@ -161,265 +186,264 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="body container">
-        <h1 class="text-center mt-5">Harry Potter</h1>
-        <div class="container mt-4">
-          <div class="row">
-            <div class="col-6">
-              <p>
-                <strong class="H">H</strong>op on board the hogwarts express and
-                come take a ride with me into the wonderful, magical, mystical
-                land of Harry Potter! As you flip open the pages of J.K.
-                Rowling's masterpieces, you'll find yourself transported to a
-                realm where words have the power to cast spells and every
-                sentence holds the enchantment of discovery. The pages come
-                alive with the vibrant hues of a magical world, where the aroma
-                of pumpkin pasties wafts through the air, and the ink on
-                parchment seems to ripple with the energy of an ever-beating
-                wizarding heart. As you delve deeper into the narrative, you'll
-                find that the magic isn't confined to the story; it's interwoven
-                with the act of reading itself.
-              </p>
-            </div>
-            <div class="col-6">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/863/original/91742c777935a7eac54bb7a24e18a3cb469c8ee8_hq.jpg?1701689111"
-                alt="hogwarts train-come ride with me"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <p class="text-center mt-4">Choose your favourite Book!</p>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-between">
-            <div class="col-4 clickableItem">
-              <div id="clickableImage1" class="img1">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/193/original/HP_phil.PNG?1701892446"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText1">
-                <p>
-                  This is the first book in the series, young Harry has no idea
-                  that he is a wizard or that the magical world of hogwarts
-                  exists! Harry Potter and the Philosopher's Stone" introduces
-                  readers to the magical world of Hogwarts, where the young
-                  wizard Harry discovers his extraordinary powers and forms deep
-                  friendships with Ron and Hermione. The trio embarks on a quest
-                  to prevent the dark wizard Voldemort from returning to power
-                  by safeguarding the Philosopher's Stone. Throughout the book,
-                  readers encounter the wonders of Quidditch, the Sorting Hat,
-                  and the Mirror of Erised, and witness Harry's courage and
-                  resilience as he faces challenges and uncovers the mysteries
-                  of his own past. The novel culminates in a gripping
-                  confrontation with Professor Quirrell, revealing the strength
-                  of Harry's character and setting the stage for the epic
-                  journey that unfolds across the series.
-                </p>
-              </div>
-            </div>
-            <div class="col-4 clickableItem">
-              <div id="clickableImage2" class="img2">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/191/original/HP_cham.PNG?1701891971"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText2">
-                <p>
-                  In "Harry Potter and the Chamber of Secrets," the second
-                  installment of the series, Harry returns to Hogwarts for his
-                  second year, only to find the school threatened by a
-                  mysterious force that petrifies students. The discovery of a
-                  hidden chamber and the legend of the heir of Slytherin add
-                  layers of intrigue to the narrative. With the help of Ron and
-                  Hermione, Harry unravels the mystery, encountering magical
-                  creatures, dueling challenges, and the enigmatic Tom Riddle's
-                  diary. The climax reveals the true identity of the malevolent
-                  force within the Chamber, showcasing Harry's bravery and the
-                  enduring bond between the three friends. This book further
-                  explores the darker aspects of the wizarding world and
-                  foreshadows the overarching conflict that continues to unfold
-                  in the series.
-                </p>
-              </div>
-            </div>
-            <div class="col-4 clickableItem">
-              <div id="clickableImage3" class="img3">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/186/original/HP_pris.PNG?1701891678"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText3">
-                <p>
-                  In "Harry Potter and the Prisoner of Azkaban," the third book
-                  in the series, Harry returns to Hogwarts for his third year,
-                  where he learns about Sirius Black, a dangerous prisoner who
-                  has escaped Azkaban and is believed to be after him. As Harry
-                  navigates the challenges of adolescence and a new magical
-                  creature, the Hippogriff Buckbeak, he also discovers the truth
-                  about his family and encounters the mysterious Dementors. The
-                  introduction of the Time-Turner adds a captivating element of
-                  time travel to the plot, leading to a surprising twist. The
-                  story delves into themes of friendship, betrayal, and the
-                  complexities of the past, expanding the magical universe and
-                  setting the stage for the unfolding saga of Harry's destiny.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 clickableItem">
-              <div id="clickableImage4">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/192/original/HP_gob.PNG?17018924302"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText4">
-                <p>
-                  In "Harry Potter and the Goblet of Fire," the fourth
-                  installment of the series, Harry unexpectedly becomes a
-                  competitor in the Triwizard Tournament, a dangerous magical
-                  competition meant for older wizards. The dark forces that have
-                  been lurking in the background start to gain strength, and the
-                  signs of Voldemort's return become more evident. The novel
-                  explores the challenges of adolescence, the complexities of
-                  relationships, and the consequences of choices made in the
-                  face of adversity. The tragic and shocking events surrounding
-                  the Triwizard Tournament leave a lasting impact on the
-                  wizarding world, marking a turning point in Harry's journey as
-                  he confronts the rising threat of the Dark Lord.
-                </p>
-              </div>
-            </div>
-            <div class="col-3 clickableItem">
-              <div id="clickableImage5">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/187/original/HP_order.PNG?1701891752"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText5">
-                <p>
-                  In "Harry Potter and the Order of the Phoenix," the fifth book
-                  in the series, Harry faces a society that doubts his claims
-                  about Voldemort's return. As he forms Dumbledore's Army to
-                  prepare his peers for the impending threat, he encounters the
-                  oppressive rule of Dolores Umbridge at Hogwarts. The novel
-                  delves into themes of rebellion, loss, and the toll of war, as
-                  Harry struggles with the weight of his destiny and the
-                  sacrifices made by those around him. The climax features a
-                  devastating battle at the Department of Mysteries, revealing
-                  prophecies that reshape the understanding of Harry's role in
-                  the fight against the dark forces. The book ends on a somber
-                  note, setting the stage for the challenging journey ahead.
-                </p>
-              </div>
-            </div>
-            <div class="col-3 clickableItem">
-              <div id="clickableImage6">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/188/original/HP_half.PNG?1701891760"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText6">
-                <p>
-                  In "Harry Potter and the Half-Blood Prince," the penultimate
-                  book in the series, Harry returns to Hogwarts to uncover
-                  Voldemort's secrets and weaknesses. Dumbledore reveals crucial
-                  memories from Voldemort's past, providing insight into his
-                  rise to power. Harry learns about Horcruxes, objects
-                  containing parts of Voldemort's soul, and the dangerous quest
-                  to destroy them. The book explores the complexities of love,
-                  as Harry navigates his own romantic feelings and observes the
-                  relationships around him. Tragedy strikes with the death of a
-                  beloved character, and the tone darkens as Voldemort's forces
-                  gain strength. The novel ends with Dumbledore's death, leaving
-                  Harry determined to complete the mission to stop the Dark
-                  Lord.
-                </p>
-              </div>
-            </div>
-            <div class="col-3 clickableItem">
-              <div id="clickableImage7">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/190/original/HP_deathly.PNG?1701891963"
-                  alt=""
-                  class="clickableImage img-fluid rounded"
-                />
-              </div>
-              <div id="displayText7">
-                <p>
-                  In "Harry Potter and the Deathly Hallows," the epic conclusion
-                  to the series, Harry, Ron, and Hermione go on a perilous quest
-                  to find and destroy the remaining Horcruxes, the key to
-                  Voldemort's immortality. The trio faces challenges, loss, and
-                  betrayal as they uncover the Deathly Hallows, powerful magical
-                  artifacts. Hogwarts is under the control of the Death Eaters,
-                  and a battle ensues between the forces of good and evil. The
-                  story delves into the history of the Deathly Hallows,
-                  revealing the significance of the Elder Wand, the Resurrection
-                  Stone, and the Invisibility Cloak. Harry sacrifices himself to
-                  save his friends, but he returns, realizing he is the true
-                  master of the Elder Wand. The final confrontation between
-                  Harry and Voldemort leads to the Dark Lord's defeat, marking
-                  the end of the wizarding war and the triumph of love, courage,
-                  and friendship. The series concludes with an epilogue set
-                  nineteen years later, depicting the characters' lives as
-                  adults and the next generation heading to Hogwarts.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="links d-flex justify-content-between">
-          <a href="#" id="hiHarry" class="text-center"
-            >Click to say <br />
-            'Hi Harry'</a
-          >
+    <div class="container-fluid">
+      <div class="heading container-fluid">
+        <a class="navbar-brand" href="#"
+          ><h1 class="text-center">Harry Potter</h1></a
+        >
+      </div>
 
-          <div class="clickEmoji text-center" id="mischiefManaged">
-            <p class="thankYou">
-              <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
-              visiting! <i class="fa-solid fa-wand-sparkles"></i>
+      <div class="hero container-fluid mt-4">
+        <div class="row">
+          <div class="col-6">
+            <p>
+              <strong class="H">H</strong>op on board the hogwarts express and
+              come take a ride with me into the wonderful, magical, mystical
+              land of Harry Potter! As you flip open the pages of J.K. Rowling's
+              masterpieces, you'll find yourself transported to a realm where
+              words have the power to cast spells and every sentence holds the
+              enchantment of discovery. As you delve deeper into the narrative,
+              you'll find that the magic isn't confined to the story; it's
+              interwoven with the act of reading itself.
             </p>
           </div>
-          <div
-            id="displayMM"
-            style="
-              display: none;
-              color: #212529;
-              padding: 20px;
-              font-family: var(--default-font-family);
-              text-align: center;
-              font-size: 60px;
-            "
-          >
-            <i class="fa-solid fa-shoe-prints"></i>
-            <h2>Mischief Managed!</h2>
+          <div class="col-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/863/original/91742c777935a7eac54bb7a24e18a3cb469c8ee8_hq.jpg?1701689111"
+              alt="hogwarts train-come ride with me"
+              class="img-fluid rounded"
+            />
           </div>
         </div>
-        <footer class="text-center">
-          <small
-            ><a href="https://github.com/Keshani15">Open source</a>, coded by
-            Keshani Naidoo
-          </small>
-        </footer>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="mid text-center mt-4">Choose your favourite Book!</p>
+        </div>
+      </div>
+      <div class="books-content container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-4 clickableItem">
+            <div id="clickableImage1" class="img1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/193/original/HP_phil.PNG?1701892446"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText1">
+              <p>
+                This is the first book in the series, young Harry has no idea
+                that he is a wizard or that the magical world of hogwarts
+                exists! Harry Potter and the Philosopher's Stone" introduces
+                readers to the magical world of Hogwarts, where the young wizard
+                Harry discovers his extraordinary powers and forms deep
+                friendships with Ron and Hermione. The trio embarks on a quest
+                to prevent the dark wizard Voldemort from returning to power by
+                safeguarding the Philosopher's Stone. Throughout the book,
+                readers encounter the wonders of Quidditch, the Sorting Hat, and
+                the Mirror of Erised, and witness Harry's courage and resilience
+                as he faces challenges and uncovers the mysteries of his own
+                past. The novel culminates in a gripping confrontation with
+                Professor Quirrell, revealing the strength of Harry's character
+                and setting the stage for the epic journey that unfolds across
+                the series.
+              </p>
+            </div>
+          </div>
+          <div class="col-4 clickableItem">
+            <div id="clickableImage2" class="img2">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/191/original/HP_cham.PNG?1701891971"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText2">
+              <p>
+                In "Harry Potter and the Chamber of Secrets," the second
+                installment of the series, Harry returns to Hogwarts for his
+                second year, only to find the school threatened by a mysterious
+                force that petrifies students. The discovery of a hidden chamber
+                and the legend of the heir of Slytherin add layers of intrigue
+                to the narrative. With the help of Ron and Hermione, Harry
+                unravels the mystery, encountering magical creatures, dueling
+                challenges, and the enigmatic Tom Riddle's diary. The climax
+                reveals the true identity of the malevolent force within the
+                Chamber, showcasing Harry's bravery and the enduring bond
+                between the three friends. This book further explores the darker
+                aspects of the wizarding world and foreshadows the overarching
+                conflict that continues to unfold in the series.
+              </p>
+            </div>
+          </div>
+          <div class="col-4 clickableItem">
+            <div id="clickableImage3" class="img3">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/186/original/HP_pris.PNG?1701891678"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText3">
+              <p>
+                In "Harry Potter and the Prisoner of Azkaban," the third book in
+                the series, Harry returns to Hogwarts for his third year, where
+                he learns about Sirius Black, a dangerous prisoner who has
+                escaped Azkaban and is believed to be after him. As Harry
+                navigates the challenges of adolescence and a new magical
+                creature, the Hippogriff Buckbeak, he also discovers the truth
+                about his family and encounters the mysterious Dementors. The
+                introduction of the Time-Turner adds a captivating element of
+                time travel to the plot, leading to a surprising twist. The
+                story delves into themes of friendship, betrayal, and the
+                complexities of the past, expanding the magical universe and
+                setting the stage for the unfolding saga of Harry's destiny.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 clickableItem">
+            <div id="clickableImage4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/192/original/HP_gob.PNG?17018924302"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText4">
+              <p>
+                In "Harry Potter and the Goblet of Fire," the fourth installment
+                of the series, Harry unexpectedly becomes a competitor in the
+                Triwizard Tournament, a dangerous magical competition meant for
+                older wizards. The dark forces that have been lurking in the
+                background start to gain strength, and the signs of Voldemort's
+                return become more evident. The novel explores the challenges of
+                adolescence, the complexities of relationships, and the
+                consequences of choices made in the face of adversity. The
+                tragic and shocking events surrounding the Triwizard Tournament
+                leave a lasting impact on the wizarding world, marking a turning
+                point in Harry's journey as he confronts the rising threat of
+                the Dark Lord.
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage5">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/187/original/HP_order.PNG?1701891752"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText5">
+              <p>
+                In "Harry Potter and the Order of the Phoenix," the fifth book
+                in the series, Harry faces a society that doubts his claims
+                about Voldemort's return. As he forms Dumbledore's Army to
+                prepare his peers for the impending threat, he encounters the
+                oppressive rule of Dolores Umbridge at Hogwarts. The novel
+                delves into themes of rebellion, loss, and the toll of war, as
+                Harry struggles with the weight of his destiny and the
+                sacrifices made by those around him. The climax features a
+                devastating battle at the Department of Mysteries, revealing
+                prophecies that reshape the understanding of Harry's role in the
+                fight against the dark forces. The book ends on a somber note,
+                setting the stage for the challenging journey ahead.
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage6">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/188/original/HP_half.PNG?1701891760"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText6">
+              <p>
+                In "Harry Potter and the Half-Blood Prince," the penultimate
+                book in the series, Harry returns to Hogwarts to uncover
+                Voldemort's secrets and weaknesses. Dumbledore reveals crucial
+                memories from Voldemort's past, providing insight into his rise
+                to power. Harry learns about Horcruxes, objects containing parts
+                of Voldemort's soul, and the dangerous quest to destroy them.
+                The book explores the complexities of love, as Harry navigates
+                his own romantic feelings and observes the relationships around
+                him. Tragedy strikes with the death of a beloved character, and
+                the tone darkens as Voldemort's forces gain strength. The novel
+                ends with Dumbledore's death, leaving Harry determined to
+                complete the mission to stop the Dark Lord.
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clickableItem">
+            <div id="clickableImage7">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/190/original/HP_deathly.PNG?1701891963"
+                alt=""
+                class="clickableImage img-fluid rounded"
+              />
+            </div>
+            <div id="displayText7">
+              <p>
+                In "Harry Potter and the Deathly Hallows," the epic conclusion
+                to the series, Harry, Ron, and Hermione go on a perilous quest
+                to find and destroy the remaining Horcruxes, the key to
+                Voldemort's immortality. The trio faces challenges, loss, and
+                betrayal as they uncover the Deathly Hallows, powerful magical
+                artifacts. Hogwarts is under the control of the Death Eaters,
+                and a battle ensues between the forces of good and evil. The
+                story delves into the history of the Deathly Hallows, revealing
+                the significance of the Elder Wand, the Resurrection Stone, and
+                the Invisibility Cloak. Harry sacrifices himself to save his
+                friends, but he returns, realizing he is the true master of the
+                Elder Wand. The final confrontation between Harry and Voldemort
+                leads to the Dark Lord's defeat, marking the end of the
+                wizarding war and the triumph of love, courage, and friendship.
+                The series concludes with an epilogue set nineteen years later,
+                depicting the characters' lives as adults and the next
+                generation heading to Hogwarts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links d-flex justify-content-between">
+        <a href="#" id="hiHarry" class="btn btn-dark text-center"
+          >Click to say <br />
+          'Hi Harry'</a
+        >
+
+        <div class="clickEmoji text-center btn btn-dark" id="mischiefManaged">
+          <a href="#" id="thankYou">
+            <i class="fa-solid fa-wand-sparkles"></i> Thank you <br />for
+            visiting! <i class="fa-solid fa-wand-sparkles"></i>
+          </a>
+        </div>
+        <div
+          id="displayMM"
+          style="
+            display: none;
+            color: #212529;
+            padding: 20px;
+            font-family: var(--default-font-family);
+            text-align: center;
+            font-size: 60px;
+          "
+        >
+          <i class="fa-solid fa-shoe-prints"></i>
+          <h2>Mischief Managed!</h2>
+        </div>
+      </div>
+      <footer class="text-center">
+        <small
+          ><a href="https://github.com/Keshani15">Open source</a>, coded by
+          Keshani Naidoo
+        </small>
+      </footer>
     </div>
     <script>
       var clickableImage1 = document.getElementById("clickableImage1");
